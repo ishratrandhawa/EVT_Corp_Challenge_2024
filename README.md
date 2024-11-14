@@ -1,25 +1,7 @@
 # EVT_Corp_Challenge_2024
-This project is a solution for the EVT Corp Technology Challenge 2024. The goal was to build a secure web server to host a static webpage using Docker and Nginx, adhering to the provided requirements. The project includes a responsive webpage that is served securely via HTTPS using a self-signed SSL certificate.
-### Features
-- **Secure Web Server**: The webpage is served securely using Nginx with a self-signed SSL certificate on port 443.
-- **Static Webpage**: Includes a visually appealing design with a visitor counter and a GitHub link.
-- **Dockerized Deployment**: The entire solution is containerized using Docker, ensuring easy portability and reproducibility.
-### Project Structure
-- `Dockerfile`: Defines the Docker image to run the Nginx server.
-- `nginx.conf`: Nginx configuration file for serving the webpage securely.
-- `evt-web.html`: Static webpage hosted by the server.
-- `cert/`: Contains the self-signed SSL certificate and private key.
-- `start.sh`: A script to automate building and running the Docker container.
+This project is my submission for the EVT Corp Technology Challenge 2024. The main goal was to create a secure web server that hosts a static webpage using Docker and Nginx. I built a professional-looking webpage that is served over HTTPS using a self-signed SSL certificate. The webpage includes a visitor counter that uses the browser’s localStorage for tracking visits and a button that links to the project’s GitHub repository. The entire solution is containerized with Docker, making it easy to set up and run on any system. 
+The key files in the project include the Dockerfile for building the Docker image, nginx.conf for configuring the Nginx server to serve the webpage securely, evt-web.html for the webpage itself, cert/ for the SSL certificate and key, and start.sh to automate the process of building and running the container.
 ### How to Run
-
-#### Prerequisites
-- Docker must be installed on your system.
-
-#### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ishratrandhawa/EVT_Corp_Challenge_2024.git
-   cd EVT_Corp_Challenge_2024
-
-
-
+To run the project, clone the repository and execute the start.sh script, then open https://localhost in a browser (accept the SSL warning for the self-signed certificate). I chose Nginx because it is lightweight and highly efficient for serving static content and Docker was used to ensure the solution is portable and consistent across environments.
+## Goals 
+If I had more time I would consider adding features like a cloud deployment for wider accessibility, implementing Let's Encrypt for automated SSL certificate renewal and improving the design with animations and other enhancements. Overall, this project demonstrates my ability to work with web server configuration, Docker, and basic front-end design to meet a set of technical requirements. I was a bit overwhelmed by school work which is why I chose a more simple approach. 
